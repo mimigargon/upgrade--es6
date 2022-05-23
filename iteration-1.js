@@ -1,8 +1,8 @@
-const arrows = (a = 10 , b = 5) => a + b;
-console.log(arrows());
+const arrows = (a = 10 , b = 5) => {
+    console.log(a + b);
+};
 
-const sum = arrows (8);
-console.log(sum);
 
-const arrowsSum = arrows (50,36);
-console.log(arrowsSum);
+arrows();
+arrows(8);
+arrows(50,38);

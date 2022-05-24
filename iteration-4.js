@@ -11,12 +11,13 @@ console.log(usersName);
 
 //4.2
 const newUsersName = users.map(user => {
-	if (user.name[0] == 'A') {
-		user.name = 'Anacleto';
-		
+	if (user.name[0] === 'A') {
+		return 'Anacleto';
+	} else {
+		return user.name;
 	}
 }); 
-console.log(users);
+console.log(newUsersName);
 
 //4.3
 const cities = [
